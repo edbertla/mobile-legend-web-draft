@@ -1,0 +1,358 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLBB Web Draft Pick Simulator</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="webDraft.css">
+</head>
+
+<body>
+
+    <div class="draft-pick">
+
+        <div class="left-team team-container">
+            <div class="upper-part">
+                <div class="left-team-name team-name-container">
+                    <p>LEFT TEAM</p>
+                </div>
+                <div class="left-team-ban ban-container">
+                    <div class="left-ban-1 ban">
+                        <img src="">
+                    </div>
+                    <div class="left-ban-2 ban">
+                        <img src="">
+                    </div>
+                    <div class="left-ban-3 ban">
+                        <img src="">
+                    </div>
+                    <div class="left-ban-4 ban">
+                        <img src="">
+                    </div>
+                    <div class="left-ban-5 ban">
+                        <img src="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="left-team-pick pick-container">
+                <div class="left-pick-1 pick">
+                    <img src="">
+                    <div class="left-nickname-1 nickname">
+                        <p>PLAYER 1</p>
+                    </div>
+                </div>
+                <div class="left-pick-2 pick">
+                    <img src="">
+                    <div class="left-nickname-2 nickname">
+                        <p>PLAYER 2</p>
+                    </div>
+                </div>
+                <div class="left-pick-3 pick">
+                    <img src="">
+                    <div class="left-nickname-3 nickname">
+                        <p>PLAYER 3</p>
+                    </div>
+                </div>
+                <div class="left-pick-4 pick">
+                    <img src="">
+                    <div class="left-nickname-4 nickname">
+                        <p>PLAYER 4</p>
+                    </div>
+                </div>
+                <div class="left-pick-5 pick">
+                    <img src="">
+                    <div class="left-nickname-5 nickname">
+                        <p>PLAYER 5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tournament-info">
+            <img src="asset/tournament-info.png">
+            <div class="left-team-logo" style="background-image: url('asset/Evos.png');"></div>
+            <div class="right-team-logo" style="background-image: url('asset/Rrq.png');"></div>
+            <div class="left-point">
+                <img src="asset/gamePoint/1-0.png">
+            </div>
+            <div class="right-point">
+                <img src="asset/gamePoint/1-0.png">
+            </div>
+            <p class="tournament-name">TOURNAMENT NAME</p>
+        </div>
+
+        <div class="right-team team-container">
+            <div class="upper-part">
+                <div class="right-team-name team-name-container">
+                    <p>RIGHT TEAM</p>
+                </div>
+                <div class="right-team-ban ban-container">
+                    <div class="right-ban-1 ban">
+                        <img src="">
+                    </div>
+                    <div class="right-ban-2 ban">
+                        <img src="">
+                    </div>
+                    <div class="right-ban-3 ban">
+                        <img src="">
+                    </div>
+                    <div class="right-ban-4 ban">
+                        <img src="">
+                    </div>
+                    <div class="right-ban-5 ban">
+                        <img src="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-team-pick pick-container">
+                <div class="right-pick-1 pick">
+                    <img src="">
+                    <div class="right-nickname-1 nickname">
+                        <p>PLAYER 1</p>
+                    </div>
+                </div>
+                <div class="right-pick-2 pick">
+                    <img src="">
+                    <div class="right-nickname-2 nickname">
+                        <p>PLAYER 2</p>
+                    </div>
+                </div>
+                <div class="right-pick-3 pick">
+                    <img src="">
+                    <div class="right-nickname-3 nickname">
+                        <p>PLAYER 3</p>
+                    </div>
+                </div>
+                <div class="right-pick-4 pick">
+                    <img src="">
+                    <div class="right-nickname-4 nickname">
+                        <p>PLAYER 4</p>
+                    </div>
+                </div>
+                <div class="right-pick-5 pick">
+                    <img src="">
+                    <div class="right-nickname-5 nickname">
+                        <p>PLAYER 5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="controller">
+        <div class="left-team-control">
+            <div class="name-control-container">
+                <div class="name-control">
+                    <label for="player-1-name">NAME 1</label>
+                    <input class="name-input" placeholder="PLAYER 1" data-side="left" data-nickname-number="1">
+                </div>
+                <div class="name-control">
+                    <label for="player-2-name">NAME 2</label>
+                    <input class="name-input" placeholder="PLAYER 2" data-side="left" data-nickname-number="2">
+                </div>
+                <div class="name-control">
+                    <label for="player-3-name">NAME 3</label>
+                    <input class="name-input" placeholder="PLAYER 3" data-side="left" data-nickname-number="3">
+                </div>
+                <div class="name-control">
+                    <label for="player-4-name">NAME 4</label>
+                    <input class="name-input" placeholder="PLAYER 4" data-side="left" data-nickname-number="4">
+                </div>
+                <div class="name-control">
+                    <label for="player-5-name">NAME 5</label>
+                    <input class="name-input" placeholder="PLAYER 5" data-side="left" data-nickname-number="5">
+                </div>
+            </div>
+            <div class="ban-control-container">
+                <div class="ban-control">
+                    <label>BAN 1</label>
+                    <input type="text" class="hero-input" data-side="left" data-pick-or-ban="ban" data-box-number="1">
+                    <div class="dropdown"></div>
+                </div>
+                <div class="ban-control">
+                    <label>BAN 2</label>
+                    <input type="text" class="hero-input" data-side="left" data-pick-or-ban="ban" data-box-number="2">
+                    <div class="dropdown"></div>
+                </div>
+                <div class="ban-control">
+                    <label>BAN 3</label>
+                    <input type="text" class="hero-input" data-side="left" data-pick-or-ban="ban" data-box-number="3">
+                    <div class="dropdown"></div>
+                </div>
+                <div class="ban-control">
+                    <label>BAN 4</label>
+                    <input type="text" class="hero-input" data-side="left" data-pick-or-ban="ban" data-box-number="4">
+                    <div class="dropdown"></div>
+                </div>
+                <div class="ban-control">
+                    <label>BAN 5</label>
+                    <input type="text" class="hero-input" data-side="left" data-pick-or-ban="ban" data-box-number="5">
+                    <div class="dropdown"></div>
+                </div>
+            </div>
+            <div class="pick-control-container">
+                <div class="pick-control">
+                    <label>PICK 1</label>
+                    <input type="text" class="hero-input" data-side="left" data-pick-or-ban="pick" data-box-number="1">
+                    <div class="dropdown"></div>
+                </div>
+                <div class="pick-control">
+                    <label>PICK 2</label>
+                    <input type="text" class="hero-input" data-side="left" data-pick-or-ban="pick" data-box-number="2">
+                    <div class="dropdown"></div>
+                </div>
+                <div class="pick-control">
+                    <label>PICK 3</label>
+                    <input type="text" class="hero-input" data-side="left" data-pick-or-ban="pick" data-box-number="3">
+                    <div class="dropdown"></div>
+                </div>
+                <div class="pick-control">
+                    <label>PICK 4</label>
+                    <input type="text" class="hero-input" data-side="left" data-pick-or-ban="pick" data-box-number="4">
+                    <div class="dropdown"></div>
+                </div>
+                <div class="pick-control">
+                    <label>PICK 5</label>
+                    <input type="text" class="hero-input" data-side="left" data-pick-or-ban="pick" data-box-number="5">
+                    <div class="dropdown"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tournament-control">
+
+            <div class="tournament-name-control">
+                <label for="tournament-name-input">TOURNAMENT NAME</label>
+                <input id="tournament-name-input" placeholder="TOURNAMENT NAME">
+            </div>
+
+            <div class="point-control-container">
+                <label for="best-of-series">Best of</label>
+                <select name="best-of-series" id="best-of-series">
+                    <option value="1">1</option>
+                    <option value="3">3</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <div class="tournament-info-container">
+                <div class="info-control">
+                    <label for="left-team-name-input">Left Team Name</label>
+                    <input class="team-name-input" id="left-team-name-input" data-side="left" placeholder="LEFT TEAM">
+                    <label for="left-team-logo-input">Upload Left Team Logo (1:1)</label>
+                    <input type="file" id="left-team-logo-input" name="filename">
+                    <div class="left-point-control">
+                        <label for="left-point-input">Point: </label>
+                        <select name="left-point" id="left-point-input">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="info-control">
+                    <label for="right-team-name-input">Right Team Name</label>
+                    <input class="team-name-input" id="right-team-name-input" data-side="right"
+                        placeholder="RIGHT TEAM">
+                    <label for="right-team-logo-input">Upload Right Team Logo (1:1)</label>
+                    <input type="file" id="right-team-logo-input" name="filename">
+                    <div class="right-point-control">
+                        <label for="right-point-input">Point: </label>
+                        <select name="right-point" id="right-point-input">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-team-control">
+            <div class="name-control-container">
+                <div class="name-control">
+                    <label for="player-1-name">NAME 1</label>
+                    <input class="name-input" placeholder="PLAYER 1" data-side="right" data-nickname-number="1">
+                </div>
+                <div class="name-control">
+                    <label for="player-2-name">NAME 2</label>
+                    <input class="name-input" placeholder="PLAYER 2" data-side="right" data-nickname-number="2">
+                </div>
+                <div class="name-control">
+                    <label for="player-3-name">NAME 3</label>
+                    <input class="name-input" placeholder="PLAYER 3" data-side="right" data-nickname-number="3">
+                </div>
+                <div class="name-control">
+                    <label for="player-4-name">NAME 4</label>
+                    <input class="name-input" placeholder="PLAYER 4" data-side="right" data-nickname-number="4">
+                </div>
+                <div class="name-control">
+                    <label for="player-5-name">NAME 5</label>
+                    <input class="name-input" placeholder="PLAYER 5" data-side="right" data-nickname-number="5">
+                </div>
+            </div>
+            <div class="ban-control-container">
+                <div class="ban-control">
+                    <label>BAN 1</label>
+                    <input type="text" class="hero-input" data-side="right" data-pick-or-ban="ban" data-box-number="1">
+                    <div class="dropdown"></div>
+                </div>
+                <div class="ban-control">
+                    <label>BAN 2</label>
+                    <input type="text" class="hero-input" data-side="right" data-pick-or-ban="ban" data-box-number="2">
+                    <div class="dropdown"></div>
+                </div>
+                <div class="ban-control">
+                    <label>BAN 3</label>
+                    <input type="text" class="hero-input" data-side="right" data-pick-or-ban="ban" data-box-number="3">
+                    <div class="dropdown"></div>
+                </div>
+                <div class="ban-control">
+                    <label>BAN 4</label>
+                    <input type="text" class="hero-input" data-side="right" data-pick-or-ban="ban" data-box-number="4">
+                    <div class="dropdown"></div>
+                </div>
+                <div class="ban-control">
+                    <label>BAN 5</label>
+                    <input type="text" class="hero-input" data-side="right" data-pick-or-ban="ban" data-box-number="5">
+                    <div class="dropdown"></div>
+                </div>
+            </div>
+            <div class="pick-control-container">
+                <div class="pick-control">
+                    <label>PICK 1</label>
+                    <input type="text" class="hero-input" data-side="right" data-pick-or-ban="pick" data-box-number="1">
+                    <div class="dropdown"></div>
+                </div>
+                <div class="pick-control">
+                    <label>PICK 2</label>
+                    <input type="text" class="hero-input" data-side="right" data-pick-or-ban="pick" data-box-number="2">
+                    <div class="dropdown"></div>
+                </div>
+                <div class="pick-control">
+                    <label>PICK 3</label>
+                    <input type="text" class="hero-input" data-side="right" data-pick-or-ban="pick" data-box-number="3">
+                    <div class="dropdown"></div>
+                </div>
+                <div class="pick-control">
+                    <label>PICK 4</label>
+                    <input type="text" class="hero-input" data-side="right" data-pick-or-ban="pick" data-box-number="4">
+                    <div class="dropdown"></div>
+                </div>
+                <div class="pick-control">
+                    <label>PICK 5</label>
+                    <input type="text" class="hero-input" data-side="right" data-pick-or-ban="pick" data-box-number="5">
+                    <div class="dropdown"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="webDraft.js"></script>
+
+</body>
+
+</html>
